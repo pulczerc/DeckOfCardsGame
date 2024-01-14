@@ -5,3 +5,8 @@
 /bin/Debug
 /.vs/DeckOfCardsGame
 /obj/Debug
+/.vs
+/DeckOfCardsGame.API/obj
+/DeckOfCardsGame.Common/obj
+/obj/Docker
+/DeckOfCardsGame.DAL/obj
