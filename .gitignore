@@ -10,3 +10,6 @@
 /DeckOfCardsGame.Common/obj
 /obj/Docker
 /DeckOfCardsGame.DAL/obj
+/DeckOfCardsGame.API/bin/Debug/net6.0
+/DeckOfCardsGame.Common/bin/Debug/net6.0
+/DeckOfCardsGame.DAL/bin/Debug/net6.0
