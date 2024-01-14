@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  deckofcardsgame.api:
+    image: ${DOCKER_REGISTRY-}deckofcardsgameapi
+    build:
+      context: .
+      dockerfile: DeckOfCardsGame.API/Dockerfile

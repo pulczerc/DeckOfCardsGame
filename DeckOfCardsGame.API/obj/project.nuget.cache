@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "ko/3l/nlyVbDdC1DoIrmp9gsuxdAZCjFQj8JknRvqnQG3LALJWwpqkBS+t3iBLMjMLFqnyTaHDK7Dpamv5jM0A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\3086252\\source\\repos\\DeckOfCardsGame\\DeckOfCardsGame.API\\DeckOfCardsGame.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\3086252\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\3086252\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\3086252\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
+    "C:\\Users\\3086252\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\3086252\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\3086252\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\3086252\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
