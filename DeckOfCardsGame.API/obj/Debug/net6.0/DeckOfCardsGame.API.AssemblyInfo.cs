@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeckOfCardsGame.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9932b8b88a6d87c16ad03bf605baeda66a808857")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0799c87c6de491d74d1795c58ed89bdd8720fd06")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeckOfCardsGame.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeckOfCardsGame.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
