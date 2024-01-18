@@ -5,44 +5,55 @@ using DeckOfCardsGame.API.Queries.Game;
 
 namespace DeckOfCardsGame.API.Services
 {
+    /// <summary>
+    /// Service for game-related operations.
+    /// </summary>
     public class GameService : IGameService
     {
+        /// <inheritdoc />
         public IEnumerable<Game> GetAllGames()
         {
             return GameData.Games.Values.ToList();
         }
 
+        /// <inheritdoc />
         public Game? GetGameById(Guid gameId)
         {
             return GameData.Games.TryGetValue(gameId, out var game) ? game : null;
         }
 
+        /// <inheritdoc />
         public List<Deck>? GetDecksInGame(Guid gameId)
         {
             return GameData.Games.TryGetValue(gameId, out var game) ? game.Shoe : null;
         }
 
+        /// <inheritdoc />
         public List<Player>? GetPlayersInGame(Guid gameId)
         {
             return GameData.Games.TryGetValue(gameId, out var game) ? game.Players : null;
         }
 
+        /// <inheritdoc />
         public IEnumerable<Card>? GetGameDeckCards(Guid gameId)
         {
             return GameData.Games.TryGetValue(gameId, out var game) ? game.GameDeckCards : null;
         }
 
+        /// <inheritdoc />
         public Game? CreateGame()
         {
             var game = Game.CreateNewGame();
             return GameData.Games.TryAdd(game.Id, game) ? game : null;
         }
 
+        /// <inheritdoc />
         public bool DeleteGame(Guid gameId)
         {
             return GameData.Games.TryRemove(gameId, out _);
         }
 
+        /// <inheritdoc />
         public List<Deck>? AddDeckToGame(Guid gameId, Guid deckId)
         {
             //Game not found
@@ -75,6 +86,7 @@ namespace DeckOfCardsGame.API.Services
             return game.Shoe;
         }
 
+        /// <inheritdoc />
         public Player? AddPlayerToGame(Guid gameId, Guid playerId)
         {
             //Game not found
@@ -98,6 +110,7 @@ namespace DeckOfCardsGame.API.Services
             return player;
         }
 
+        /// <inheritdoc />
         public bool RemovePlayerFromGame(Guid gameId, Guid playerId)
         {
             //Game not found
@@ -114,6 +127,7 @@ namespace DeckOfCardsGame.API.Services
             return true;
         }
 
+        /// <inheritdoc />
         public List<Card>? ShuffleGameDeck(Guid gameId)
         {
             //Game not found
@@ -124,6 +138,7 @@ namespace DeckOfCardsGame.API.Services
             return game.GameDeckCards;
         }
 
+        /// <inheritdoc />
         public List<Card>? DealCardsToPlayer(Guid gameId, Guid playerId, int numberOfCardsToDeal)
         {
             //Game not found
@@ -145,7 +160,8 @@ namespace DeckOfCardsGame.API.Services
             
             return dealtCards.Count > 0 ? dealtCards : null;
         }
-
+        
+        /// <inheritdoc />
         public List<PlayerHandValue>? GetPlayersWithHandValues(Guid gameId)
         {
             if (!GameData.Games.TryGetValue(gameId, out var game)) return null;
@@ -163,6 +179,7 @@ namespace DeckOfCardsGame.API.Services
             return playersHandValues;
         }
 
+        /// <inheritdoc />
         public List<RemainingCardsCountBySuit>? GetRemainingCardsCountBySuit(Guid gameId)
         {
             if (!GameData.Games.TryGetValue(gameId, out var game)) return null;
@@ -176,6 +193,7 @@ namespace DeckOfCardsGame.API.Services
             return remainingCardsBySuit;
         }
 
+        /// <inheritdoc />
         public Dictionary<string, int>? GetRemainingCardsCount(Guid gameId)
         {
             if (!GameData.Games.TryGetValue(gameId, out var game)) return null;
