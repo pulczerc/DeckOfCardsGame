@@ -6,7 +6,7 @@ using DeckOfCardsGame.API.Commands.Player;
 namespace DeckOfCardsGame.API.Controllers
 {
     /// <summary>
-    /// PlayerController
+    /// Controller for managing player-related operations.
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
@@ -14,6 +14,10 @@ namespace DeckOfCardsGame.API.Controllers
     {
         private readonly IPlayerService _playerService;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PlayerController"/> class.
+        /// </summary>
+        /// <param name="playerService">The service for player operations.</param>
         public PlayerController(IPlayerService playerService)
         {
             _playerService = playerService;
