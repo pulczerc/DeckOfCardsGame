@@ -9,8 +9,6 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["DeckOfCardsGame.API/DeckOfCardsGame.API.csproj", "DeckOfCardsGame.API/"]
-COPY ["DeckOfCardsGame.Common/DeckOfCardsGame.Common.csproj", "DeckOfCardsGame.Common/"]
-COPY ["DeckOfCardsGame.DAL/DeckOfCardsGame.DAL.csproj", "DeckOfCardsGame.DAL/"]
 RUN dotnet restore "./DeckOfCardsGame.API/./DeckOfCardsGame.API.csproj"
 COPY . .
 WORKDIR "/src/DeckOfCardsGame.API"

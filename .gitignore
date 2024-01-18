@@ -3,16 +3,14 @@
 ################################################################################
 
 /bin/Debug
-/.vs/DeckOfCardsGame
+/obj/Docker
 /obj/Debug
 /.vs
+/.vs/DeckOfCardsGame
+/.vs/ProjectEvaluation
 /DeckOfCardsGame.API/obj
 /DeckOfCardsGame.Common/obj
-/obj/Docker
 /DeckOfCardsGame.DAL/obj
 /DeckOfCardsGame.API/bin/Debug/net6.0
 /DeckOfCardsGame.Common/bin/Debug/net6.0
 /DeckOfCardsGame.DAL/bin/Debug/net6.0
-/.vs/ProjectEvaluation/deckofcardsgame.metadata.v7.bin
-/.vs/ProjectEvaluation/deckofcardsgame.projects.v7.bin
-/.vs/ProjectEvaluation/deckofcardsgame.projects.v7.bin
